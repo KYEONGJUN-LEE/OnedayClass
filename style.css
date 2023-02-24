@@ -1,0 +1,125 @@
+body {
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.cardWrap {
+  width: 800px;
+  height: 600px;
+  background: #F3F3F3;
+  border-radius: 50px;
+  text-align: center;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-400px;
+  margin-top:-300px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.cardInner {
+  width: 780px;
+  height: 580px;
+  border: 5px solid #FF7710;
+  border-radius: 50px;
+  margin: 0.5% auto;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+}
+
+.cardWrap.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.cardForm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 120px;
+  border: 2px solid #FF7710;
+  transform: rotate(0.48deg);
+}
+
+.infoImg img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 3px solid #5E5E5E;
+  border-radius: 144.5px;
+  margin-top: 10%;
+}
+
+.infoName {
+  margin-top: 5%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.infoMajor, .infoGrade {
+  font-size: 28px;
+}
+
+.quizWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+.quiz1, .quiz2, .quiz3, .quiz4 {
+  display: flex;
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.quiz3, .quiz4 {
+  margin-top: 10%;
+}
+
+.q1, .q2, .q3, .q4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #FF7710;
+}
+
+.a1, .a2, .a3, .a4 {
+  margin-top: 5px;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 130%;
+  color: #1C1B1A;
+}
+
+.a1 {
+  margin-left: 12%;
+}
+
+.likeLion {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
